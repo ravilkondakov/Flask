@@ -1,0 +1,113 @@
+2020-07-29 13:37:41,856 ERROR: Exception on /user/Sofi [GET] [in C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\PycharmProjects\megatutorial\cat\main\routes.py", line 76, in user
+    next_url=next_url, prev_url=prev_url, form=form)
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PycharmProjects\megatutorial\cat\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "D:\PycharmProjects\megatutorial\cat\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "D:\PycharmProjects\megatutorial\cat\templates\base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "D:\PycharmProjects\megatutorial\cat\templates\user.html", line 17, in block "app_content"
+    <form action="{{ url_for('follow', username=user.username) }}" method="post">
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\werkzeug\routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'follow' with values ['username']. Did you mean 'main.follow' instead?
+2020-07-29 13:37:56,392 INFO: Microblog startup [in D:\PycharmProjects\megatutorial\cat\__init__.py:76]
+2020-07-29 13:38:16,109 INFO: Microblog startup [in D:\PycharmProjects\megatutorial\cat\__init__.py:76]
+2020-07-29 13:38:20,896 ERROR: Exception on /user/Ravil [GET] [in C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\PycharmProjects\megatutorial\cat\main\routes.py", line 76, in user
+    next_url=next_url, prev_url=prev_url, form=form)
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\PycharmProjects\megatutorial\cat\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "D:\PycharmProjects\megatutorial\cat\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "D:\PycharmProjects\megatutorial\cat\templates\base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "D:\PycharmProjects\megatutorial\cat\templates\user.html", line 17, in block "app_content"
+    <form action="{{ url_for('follow', username=user.username) }}" method="post">
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\flask\helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "C:\Users\Damir Kondakov\PycharmProjects\megatutorial\lib\site-packages\werkzeug\routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'follow' with values ['username']. Did you mean 'main.follow' instead?
+2020-07-29 13:48:25,163 INFO: Microblog startup [in D:\PycharmProjects\megatutorial\cat\__init__.py:76]

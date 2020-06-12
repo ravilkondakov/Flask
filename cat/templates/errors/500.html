@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <h1>Ты зачем сюда полез??? </h1>
+    <p>Теперь мне придется работать... Ты доволен???!</p>
+    <p><a href="{{ url_for('main.index') }}">{{ _('Back') }}</a></p>
+{% endblock %}
